@@ -357,6 +357,11 @@ a:hover{
 .progressbar li.active {
   color: #E47390;
 }
+.progressbar li.process:before{
+	background-color: #fff;
+	color:#E47390;
+	border:1px solid #E47390;
+}
 .progressbar li.active:before {
   border-color: #E47390;
   background-color: #E47390;
@@ -495,22 +500,25 @@ a:hover{
 input::placeholder{
 	color: #DCDBDB;
 }
-.search-moving-container {
-  position: relative;
-  animation: myfirst 8s 2;
+.search-moving-container{
+  	position: relative;
+  	animation: myfirst 8s 2;
  	animation-iteration-count: infinite;
 	/*animation-direction: alternate;*/
-  margin: 0 auto;
-  top: 215px;
+ 	margin: 0 auto;
+ 	top: 215px;
 	right: 110px;
+	
+
 }
+
 #search-helper h1{
 	color: #2B2B2B !important;
 	font-size: 36px;
 	margin-bottom: 266px;
 }
 #search-helper .search-helper{
-
+	position: relative;
 	background-image: url('images/team.png');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -520,6 +528,19 @@ input::placeholder{
 	margin: 0 auto;
 	margin-top: 260px;
 
+}
+.blur{
+	height: 180px;
+	width: 180px;
+	backdrop-filter: blur(5px);
+	height: 120px;
+    width: 120px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 14px;
+    border-radius: 50%;
+    left: 125px;
 }
 
 @keyframes myfirst {
@@ -658,6 +679,9 @@ input::placeholder{
 /*footer*/
 footer{
 	margin-top: 50px;
+}
+#homepage footer{
+	margin-top: 0px;
 }
 footer .bottom-footer{
 	padding-bottom: 22px;
@@ -802,5 +826,10 @@ footer .upper-footer .contact-us{
 		background-color: rgb(228,115,144,0);
 		border-radius: 0px;
 
+	}
+	@media (max-width: 767.98px) {
+		#customer-review .item{
+			margin: 0 auto;
+		}
 	}
  }

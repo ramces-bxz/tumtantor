@@ -9,6 +9,7 @@
   	<link rel="stylesheet" type="text/css" href="css/owl-carousel-min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl-theme.css">
 	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="tasks.css" />
 	</head>
 	<body>
     <!-- MAIN CONTENT -->
@@ -49,6 +50,7 @@
 	    	</div>
 	    </header>
 	    <!-- HEADER -->
+	    <!-- progress bar -->
 	    <section>
 	    	<div id="progress-bar" class="container">
 	    		<div class="row">
@@ -61,7 +63,7 @@
 							          <p>รายละเอียดงานของคุณ</p>  
 							          <p>Describe your task</p>
 							        </li>
-							        <li>
+							        <li class="process">
 							          <p>เลือกรูปแบบงานและราคา</p>
 							          <p>Browse Tasker & Price</p>
 							        </li>
@@ -80,17 +82,31 @@
 	    		</div>
 	    	</div>
 	    </section>
-	    
-	    <section>
+	    <!-- end of progress bar -->
+	    <section id = "body-content">
+	    	<div class="body-content set-top-padding">
 	    	<div id="search-techician" class="container">
 	    		<div class="row">
-		    		<div class="col-md-12">
-		    			<div class="job-title">
-		    				<h2>บริการช่วยขนย้ายของ</h2>
-		    				<a href="">(เปลี่ยนงานใหม่)</a>
-		    			</div>
-		    		</div>
-		    		<div class="col-md-12">
+					<div class="col-md-12">
+						<div class="breadcrumb-holder py-2">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb px-0 mb-0">
+										<li class="breadcrumb-item"><a href="#">ภาพรวม</a></li>
+										<li class="breadcrumb-item"><a href="#">เลือกรูปแบบงานและราคา</a></li>
+										<li class="breadcrumb-item active"><a href="">เลือกรายละเอียดงาน</a></li>
+									</ol>
+								</nav>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="task-details-holder">
+							<h4>บริการช่วยขนย้ายของ</h4> <a href="javascript:;" class="tdh-head-link">(เปลี่ยนงานใหม่)</a>
+						</div>
+					</div>
+				</div>
+
+	    		<div class="row">
+		    		<div class="col-md-12 py-4">
 		    			<div class="search-techician tumtantur-box">
 		    				<div class="search-tech-form">
 		    					<h3>ค้นหาช่างในพื้นที่ของคุณ</h3>
@@ -110,6 +126,7 @@
 		    			</div>
 		    		</div>
 		    	</div>
+		    </div>
 		    </div>
 	    </section>
 
@@ -267,6 +284,10 @@
 	    		items:2,
 	    	},
 	    	992:{
+	    		nav:false,
+	    		items:3,
+	    	},
+	    	1400:{
 	    		nav:true,
 	    		items:3,
 	    	}
