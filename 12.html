@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tumtantur</title>
+  	<link rel="stylesheet" href="css/bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="css/owl-carousel-min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl-theme.css">
+	<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+    <!-- MAIN CONTENT -->
+   <div class="tumtantur-content">
+     <!-- HEADER -->
+	    <header>
+	    	<div id="header" class="container-fluid px-0">
+		    	<div class="container px-xl-3 px-lg-3 px-md-0 px-sm-0 px-0">
+		    		<div class="row">
+		    			<div class="col-md-12">
+		    				<nav class="navbar navbar-expand-lg p-0">
+								<a class="navbar-brand py-0" href="#">
+								  	<img src="images/tumtantur-key-th-eng.png" alt="">
+								</a>
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+								   <img src="images/bar.png">
+								  </button>
+								  <div class="collapse navbar-collapse" id="navbarNav">
+								    <ul class="navbar-nav ml-auto">
+									     <li class="nav-item">
+									        <a class="nav-link px-0" href="#">ค้นหาช่างของคุณ</a>
+									      </li>
+									      <li class="nav-item">
+									        <a class="nav-link px-0" href="#">บริการของเรา</a>
+									      </li>
+									      <li class="nav-item">
+									        <a class="nav-link px-0" href="#">รายการของคุณ</a>
+									      </li>
+									      <li class="nav-item">
+									        <a class="nav-link px-0" href="#">บัญชีของคุณ</a>
+									      </li>
+								    </ul>
+								</div>
+							</nav>
+		    			</div>
+		    		</div>
+		    	</div>
+	    	</div>
+	    </header>
+	    <!-- HEADER -->
+	    <section>
+	    		<div id="progress-bar" class="container">
+		    		<div class="row">
+		    			<div class="col-md-12">
+		    				<div class="tumtantur-box progress-bar-container">
+		    					<h1>จ้างช่างบนระบบ TumTanTur ง่ายๆ เพียง 4 ขั้นตอน</h1>
+		    					<div class="progressbarwrapper">
+		    						<ul class="progressbar">
+								         <li class="active">
+								          <p>รายละเอียดงานของคุณ</p>  
+								          <p>Describe your task</p>
+								        </li>
+								        <li class="active">
+								          <p>เลือกรูปแบบงานและราคา</p>
+								          <p>Browse Tasker & Price</p>
+								        </li>
+								        <li class="active">
+								          <p>เลือกวันและเวลา</p>
+								          <p>Choose Date & Time</p>
+								        </li>
+								        <li>
+								          <p>ยืนยันการทำรายการ</p>
+								          <p>Confirm Details</p>
+								        </li>
+							    	</ul>
+		    					</div>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+	    </section>
+
+	    <section>
+	    	<div id="transaction_confirm">
+	    		<div class="container">
+	    			<div class="row">
+	    				<div class="col-md-12">
+	    					<div class="tumtantur-box">
+	    						<img src="images/transaction-notes.png" alt="">
+	    						<h1>ยืนยันการทำรายการ</h1>
+	    						<p class="text-center">โปรดตรวจสอบข้อมูลรายละเอียดของงานที่ท่านต้องการ</p>
+	    						<div class="transaction-info d-flex justify-content-center">
+	    							<div>
+	    								<div class="d-flex">
+	    								<div class="transaction-label">วัน/เวลาที่เลือก :</div>
+	    								<div>3 กุมภาพันธ์ 2564. 16:00 น.</div>
+		    							</div>
+		    							<div class="d-flex">
+		    								<div class="transaction-label"v>สถานที่ :</div>
+		    								<div>208/1523 ซ. พหลโยธิน34 ถ.พหลโยธิน แขวงจันทรเกษม,เขตจตุจักร, กรุงเทพมหานคร 10210</div>
+		    							</div>
+		    							<div class="d-flex">
+		    								<div class="transaction-label">รูปแบบงาน :</div>
+		    								<div>บริการช่วยขนย้ายของ (งานขนาดเล็ก - ใช้เวลาประมาณ 1 ชม.)</div>
+		    							</div>
+	    							</div>
+	    						</div>
+	    						<div class="transaction-buttons text-center">
+	    							<button type="submit" class="tumtantor-btn-style tumtantor-btn-active">ยืนยันการทำรายการ</button>
+			    					<button type="submit" class="tumtantor-btn-style tumtantor-btn-inactive" data-toggle="modal" data-target="#tumtantur-modal">ยกเลิกรายการ</button>
+	    						</div>
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<!-- Modal -->
+			<div class="modal fade" id="tumtantur-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content text-center">
+			      <div class="modal-body">
+			      	<img src="images/modal-alert.png" alt="">
+			      	<h5 class="modal-title">บันทึกรายการไว้ภายหลัง?</h5>
+			        <p>คุณต้องการบันทึกรายการไว้ <br>ดำเนินการต่อภายหลังหรือไม่?</p>
+			        <button class="button-record">บันทึก</button>
+			        <button class="button-cancel" data-dismiss="modal">ยกเลิก</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+				<!-- Modal -->
+	    </section>
+
+    	<footer>
+    		<div class="container-fluid upper-footer">
+    			<div class="container">
+	    			<div class="row">
+	    				<div class="col-md-12">
+	    					<div class="d-flex flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column">
+	    						<div class="footer-logo">
+	    							<img src="images/tumtantur-key-th-eng.png" alt="">
+	    						</div>
+	    						<div class="footer-nav help-center">
+		    						<ul>
+		    							<li class="nav-title">
+		    								<a href="">ศูนย์ช่วยเหลือ</a>
+		    							</li>
+		    							<li>
+		    								<a href="">ติดตามช่างของคุณ</a>
+		    							</li>
+		    							<li>
+		    								<a href="">วิธีใช้งานบริการของเรา</a>
+		    							</li>
+		    							<li>
+		    								<a href="">การคืนเงิน</a>
+		    							</li>
+		    							<li>
+		    								<a href="">นโยบายความเป็นส่วนตัว</a>
+		    							</li>
+		    							<li>
+		    								<a href="">นโยบายการใช้คุ้กกี้</a>
+		    							</li>
+		    						</ul>
+	    						</div>
+	    						<div class="footer-nav about-us">
+	    							<ul>
+	    								<li class="nav-title">
+	    									<a href="">เกี่ยวกับเรา</a>
+	    								</li>
+	    								<li>
+	    									<a href="">เกี่ยวกับ Tamtantur.com</a>
+	    								</li>
+	    							</ul>
+	    						</div>
+	    						<div class="footer-nav contact-us">
+	    							<ul>
+	    								<li class="nav-title">
+	    									<a href="">ติดต่อเรา</a>
+	    								</li>
+	    								<li>
+	    									<a href="">มาร่วมเป็นช่างกับเรา</a>
+	    								</li>
+	    								<li>
+	    									<a href="">แชทกับเรา</a>
+	    								</li>
+	    							</ul>
+	    						</div>
+	    						<div class="footer-nav">
+	    							<ul>
+	    								<li class="nav-title">
+	    									<a href="">เชื่อมต่อเรา</a>
+	    								</li>
+	    							</ul>
+	    							<div class="social-links d-flex flex-row">
+	    								<a href="" class="d-flex justify-content-center align-items-center">
+	    									<div>
+	    										<img src="images/facebook-icon.png">
+	    									</div>
+	    								</a>
+	    								<a href="" class="d-flex justify-content-center align-items-center">
+	    									<div>
+	    										<img src="images/instagram.png">
+	    									</div>
+	    								</a>
+	    								<a href="" class="d-flex justify-content-center align-items-center">
+	    									<div>
+	    										<img src="images/twitter.png">
+	    									</div>
+	    								</a>
+	    								<a href="" class="d-flex justify-content-center align-items-center">
+	    									<div>
+	    										<img src="images/line.png">
+	    									</div>
+	    								</a>
+	    							</div>
+	    							<ul>
+	    								<li class="nav-title">
+	    									<a href="">วิธีการชำระเงิน</a>
+	    								</li>
+	    							</ul>
+	    							<div class="payment-gateway-figures d-flex justify-content-center align-items-center">
+	    								<figure>
+	    									<img src="images/visa.png">
+	    								</figure>
+	    								<figure>
+	    									<img src="images/mastercard.png">
+	    								</figure>
+	    								<figure>
+	    									<img src="images/american-express.png">
+	    								</figure>
+	    								<figure>
+	    									<img src="images/unionpay.png">
+	    								</figure>
+	    								<figure>
+	    									<img src="images/jcb.png">
+	    								</figure>
+	    							</div>
+	    							<div class="office-hours">
+	    								<p><span>วันจันทร์ - ศุกร์</span>8:30 - 19:00</p>
+	    								<p><span>วันเสาร์ - อาทิตย์ </span>9:00 - 18:00</p>
+	    							</div>
+	    						</div>
+	    					</div>
+	    					
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>	
+    		<div class="container-fluid bottom-footer">
+    			<div class="container">
+    				<div class="col-md-12">
+	    				<div id="copywrite">
+				    		<p>Copyright 2021.  Tamtantur.com  All rights reserved</p>
+				    		
+				    	</div>	
+    				</div>
+    			</div>
+    		</div>
+    	</footer>
+   </div><!-- /.container-fluid -->
+    
+    <!-- SCRIPT -->
+   
+    <script src="js/jquery.js"></script>
+    <script src="js/slim.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/owl-carousel.js"></script>
+	<script type="text/javascript">
+  	$(document).ready(function(){
+	   $('.owl-one').owlCarousel({
+	    loop:false,
+	    items:3,
+	    dots:false,
+	    margin:20,
+	    nav:true,
+	    navText: ["<img src='images/previous-icon.png'>","<img src='images/next-icon.png'>"],
+	    responsive:{
+	    	0:{
+	    		nav:false,
+	    		items:1,
+	    	},
+	    	768:{
+	    		nav:false,
+	    		items:2,
+	    	},
+	    	992:{
+	    		nav:true,
+	    		items:3,
+	    	}
+	    }
+	  })
+	   $('#tumtantur-modal').on('show.bs.modal', function (e) {
+  			$('#header').css('z-index','1');
+		})
+	});
+	</script>
+	</body>
+</html>
