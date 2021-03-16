@@ -508,12 +508,9 @@ input::placeholder{
   	position: relative;
   	animation: myfirst 8s 2;
  	animation-iteration-count: infinite;
-	/*animation-direction: alternate;*/
  	margin: 0 auto;
  	top: 215px;
 	right: 110px;
-
-
 }
 
 #search-helper h1{
@@ -534,8 +531,7 @@ input::placeholder{
 
 }
 .blur{
-	height: 180px;
-	width: 180px;
+	
 	backdrop-filter: blur(5px);
 	height: 120px;
     width: 120px;
@@ -585,6 +581,9 @@ input::placeholder{
 	text-align: right;
 	margin-bottom: 20px;
 	margin-right: 14px;
+}
+#transaction_confirm .transaction-info div{
+	margin-bottom: 20px;
 }
 #transaction_confirm h1 {
 	margin-bottom: 22px;
@@ -649,6 +648,7 @@ input::placeholder{
 	max-width: 373px;
 	width: 100%;
 	border-radius: 8px;
+	margin:0 auto;
 }
 #tumtantur-modal .modal-dialog .modal-body{
 	padding:30px;
@@ -841,11 +841,72 @@ footer .upper-footer .contact-us{
 		#customer-review .item{
 			margin: 0 auto;
 		}
+		.tumtantur-box{
+			padding: 15px;
+		}
+		#search-techician .search-techician .next-step-btn.active,#search-techician .search-techician .next-step-btn.inactive{
+			margin-left: 0px;
+    		margin-top: 15px;
+		}
+		#search-techician .search-tech-form h3{
+			font-size: 18px
+		}
 	}
 	@media (max-width: 575.98px) {
 		.progressbar li p{
 			display: none;
 		}
-
+		#transaction_successful img{
+			width: 150px;
+		}
+		#transaction_confirm h1{
+			font-size: 28px;
+		}
+		
+		#transaction_confirm .transaction-info .transaction-label{
+			max-width: 100%;
+			text-align: center;
+			margin-bottom: 0px;
+			margin-top: 20px;
+			margin-right: 0px;
+		}
+		#search-helper .search-helper{
+			width: 250px;
+		}
+		.search-moving-container img{
+			width: 100px;
+		}
+		#search-helper h1{
+			font-size: 16px;
+		}
+		.blur{
+			width: 68px;
+			height: 68px;
+		}
+		.search-moving-container{
+		  	position: relative;
+		  	animation: myfirsts 5s 2;
+		 	animation-iteration-count: infinite;
+		 	margin: 0 auto;
+		 	top: 155px;
+			right: 75px;
+		}
+		.blur{
+			top: 7px;
+   			left: 82px;
+   			backdrop-filter: blur(2px);
+		}
+		#search-helper .search-helper{
+			margin-top: 200px;
+			height: 250px;
+		}
+		@keyframes myfirsts {
+		  0%   {background: transparent; right: 75px; top: 155px;}
+		  20%  {background: transparent; right: 40px; top: 55px;}
+		  40%  {background: transparent; right: -30px; top: 25px;}
+		 60%  {background: transparent; right: -90px; top: 80px;}
+		  80% {background: transparent; right: -10px; top: 145px;}
+		   100% {background: transparent; right: 75px; top: 155px;}
+		}
 	}
  }
