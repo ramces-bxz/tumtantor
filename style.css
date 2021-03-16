@@ -508,7 +508,7 @@ input::placeholder{
  	margin: 0 auto;
  	top: 215px;
 	right: 110px;
-	
+
 
 }
 
@@ -770,19 +770,24 @@ footer .upper-footer .contact-us{
 	}
 	#navbarNav{
 		background-color: #EDEDED;
-		margin-top: 10px;
 	}
 	#header{
 		height: auto;
 	}
 	.navbar-toggler{
+    border-radius: 0px;
+    padding: 10px;
+    position: fixed;
+    top: auto;
+    right: 5px;
+    z-index: 9;
 		margin-right: 15px;
 	}
 	.navbar-toggler img{
 		width: 30px;
 	}
 	.navbar-toggler{
-		background-color: #E47390;
+		/* background-color: #E47390; */
 		border-radius: 0px;
 		padding: 10px;
 	}

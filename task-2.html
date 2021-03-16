@@ -65,7 +65,7 @@
 							          <p>รายละเอียดงานของคุณ</p>
 							          <p>Describe your task</p>
 							        </li>
-							        <li>
+							        <li class="active">
 							          <p>เลือกรูปแบบงานและราคา</p>
 							          <p>Browse Tasker & Price</p>
 							        </li>
@@ -116,16 +116,21 @@
 												<span>ประเภทงานของคุณ</span>
 												<hr/>
 												<ul class="list-group">
-													<li class="list-group-item py-0">
-														<div class="w-100 d-flex">
-															<div class="mr-auto">
-																<span class="select pr-3"></span> งานขนาดเล็ก - ใช้เวลาประมาณ 1 ชม.
+													<li class="list-group-item">
+														<div class="row d-flex">
+															<div class="col-md-6 col-xs-12 text-xs-center">
+																<div class="list-icon-details">
+																	<span class="select"></span>
+																</div>
+																<div class="list-description-details pl-3">
+																		<span class="w-75">งานขนาดเล็ก - ใช้เวลาประมาณ 1 ชม.</span>
+																</div>
 															</div>
-															<div>
+															<div class="col-md-6 col-xs-12 button-holder">
 																<span class="minus-btn"></span>
-																<span class="number">
-																		<input type="text" value="3" class="form-control">
-																</span>
+																<div class="number">
+																		<input type="text" value="0" class="form-control">
+																</div>
 																<span class="plus-btn"></span>
 																<span class="check-btn"></span>
 															</div>
@@ -139,7 +144,7 @@
 												</div>
 												<div class="w-100 map">
 													<div class="form-row">
-														<div class="col-md-5 pr-0">
+														<div class="col-12 col-md-5 col-sm-12 pr-md-0">
 															<div class="input-group map-icon">
 												        <div class="input-group-prepend">
 												          <span class="input-group-text"></span>
@@ -147,10 +152,10 @@
 												        <input type="text" class="form-control" placeholder="ระบุพิกัดที่อยู่ของคุณ เช่น เขต ตำบล">
 												      </div>
 														</div>
-														<div class="col-md-4 pl-0">
+														<div class="col-12 col-md-4 col-sm-12 pl-md-0 pb-2 pt-2 pb-md-0 pt-md-0">
 															<input type="text" class="scond-input form-control" placeholder="ระบุข้อมูลเกี่ยวกับที่อยู่ของคุณ เช่น บ้านเลขที่ ถนน ซอย">
 														</div>
-														<div class="col-md-3">
+														<div class="col-12 col-md-3 col-sm-12">
 																<a class="map-search" name="button">ค้นหาในแผนที่</a>
 														</div>
 													</div>
