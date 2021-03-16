@@ -22,6 +22,9 @@
   font-family: SukhumvitSet-Thin;
   src: url(fonts/SukhumvitSet-Thin.ttf);
 }
+body{
+	font-family: SukhumvitSet-Medium;
+}
 h1,h2,h3,h4,h5,h6,p,a{
 	padding: 0;
 	margin: 0;
@@ -41,13 +44,6 @@ a:hover{
 	color: #8A989A;
 }
 /*frontpage*/
-.tumtantur-content{
-	/*max-width: 1920px;
-	width: 100%;
-	margin:0 auto;*/
-	/*position: relative;
-  	min-height: 100vh;*/
-}
 .container{
 	max-width: 1646px;
 	width: 100%;
@@ -59,12 +55,7 @@ a:hover{
 	right: 0;
 	z-index: -1;
 }
-.header-banner-wrapper{
-	/*background-color: #F3F3F3;
-	background-image: url('images/sweeping.png');
-	background-position: top right;
-    background-repeat: no-repeat;*/
-}
+
 #homepage #header{
 	padding-top: 50px;
 	box-shadow: none;
@@ -72,6 +63,7 @@ a:hover{
 	background-color: transparent;
 	position: static;
 	height: auto;
+	box-shadow: 3px 0px 6px  rgba(0, 0, 0, 0.15);
 }
 #homepage #header .navbar-brand img{
 	width: auto;
@@ -99,6 +91,8 @@ a:hover{
 }
 #banner h1{
 	font-size: 100px;
+	font-family: SukhumvitSet-Bold;
+	font-weight: bold;
 }
 #banner h1 span{
 	color: #E47390;
@@ -144,6 +138,8 @@ a:hover{
     margin-bottom: 8px;
     display: inline-block;
     text-decoration: underline;
+    font-family: SukhumvitSet-SemiBold;
+    font-weight: 600;
 }
 
 #banner .jobs-suggestion span{
@@ -169,6 +165,8 @@ a:hover{
 	border-bottom: 1px solid #DCDBDB;
 	padding-bottom: 18px;
 	margin-bottom: 50px;
+	font-family: SukhumvitSet-Bold;
+	font-weight: bold;
 }
 #customer-review{
 	background-color: #EDEDED;
@@ -299,6 +297,8 @@ a:hover{
 	font-size: 36px;
 	color:#2B2B2B;
 	text-align: center;
+	font-family: SukhumvitSet-Bold;
+	font-weight: bold;
 }
 #progress-bar .progressbarwrapper{
 	max-width: 1046px;
@@ -321,6 +321,10 @@ a:hover{
 .progressbar li p{
 	font-size: 16px;
 	color: #2B2B2B;
+}
+.progressbar li p:first-child{
+	font-family: SukhumvitSet-Bold;
+	font-weight: bold;
 }
 .progressbar li:before {
   content: counter(step);
@@ -662,6 +666,7 @@ input::placeholder{
 	margin-bottom: 18px;
 	margin-top: 13px;
 	color: #2B2B2B;
+	font-weight: bold;
 }
 #tumtantur-modal .modal-dialog p{
 	margin-bottom: 36px;
@@ -836,5 +841,11 @@ footer .upper-footer .contact-us{
 		#customer-review .item{
 			margin: 0 auto;
 		}
+	}
+	@media (max-width: 575.98px) {
+		.progressbar li p{
+			display: none;
+		}
+
 	}
  }
