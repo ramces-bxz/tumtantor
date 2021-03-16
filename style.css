@@ -63,7 +63,6 @@ a:hover{
 	background-color: transparent;
 	position: static;
 	height: auto;
-	box-shadow: 3px 0px 6px  rgba(0, 0, 0, 0.15);
 }
 #homepage #header .navbar-brand img{
 	width: auto;
@@ -226,12 +225,12 @@ a:hover{
 }
 #customer-review .owl-carousel .owl-nav button.owl-next img{
 	position: relative;
-    top: -2px;
+    top: 0px;
     right: -2px;
 }
 #customer-review .owl-carousel .owl-nav button.owl-prev img{
 	position: relative;
-    top: -2px;
+    top: 0px;
     left: -2px;
 }
 #customer-review .owl-theme .owl-nav .disabled{
@@ -854,7 +853,7 @@ footer .upper-footer .contact-us{
 	}
 	@media (max-width: 575.98px) {
 		.progressbar li p{
-			display: none;
+			display: none;76
 		}
 		#transaction_successful img{
 			width: 150px;
