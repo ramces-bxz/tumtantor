@@ -62,12 +62,12 @@
 	    					<div class="progressbarwrapper">
 	    						<ul class="progressbar">
 							         <li class="active">
-							          <p>รายละเอียดงานของคุณ</p>
-							          <p>Describe your task</p>
-							        </li>
-							        <li class="active">
-							          <p>เลือกรูปแบบงานและราคา</p>
+												<p>เลือกรูปแบบงานและราคา</p>
 							          <p>Browse Tasker & Price</p>
+							        </li>
+							        <li>
+												<p>รายละเอียดงานของคุณ</p>
+							          <p>Describe your task</p>
 							        </li>
 							        <li>
 							          <p>เลือกวันและเวลา</p>
@@ -81,20 +81,20 @@
 									<div class="mobile-step-description text-center">
 										<!-- show if task active by putting class 'active-description' else remove the class if not active -->
 										<div class="steps step-active">
-											<h5>รายละเอียดงานของคุณ</h5>
-											<span>Describe your task</span>
+											<h5>เลือกรูปแบบงานและราคา</h5>
+											<span>Browse Tasker & Price</span>
 										</div>
 										<div class="steps">
 											<h5>รายละเอียดงานของคุณ</h5>
 											<span>Describe your task</span>
 										</div>
 										<div class="steps">
-											<h5>รายละเอียดงานของคุณ</h5>
-											<span>Describe your task</span>
+											<h5>เลือกวันและเวลา</h5>
+											<span>Choose Date & Time</span>
 										</div>
 										<div class="steps">
-											<h5>รายละเอียดงานของคุณ</h5>
-											<span>Describe your task</span>
+											<h5>ยืนยันการทำรายการ</h5>
+											<span>Confirm Details</span>
 										</div>
 									</div>
 	    					</div>
@@ -113,8 +113,8 @@
 								<div class="breadcrumb-holder py-2">
 									<nav aria-label="breadcrumb">
 										<ol class="breadcrumb px-0 mb-0">
-										    <li class="breadcrumb-item"><a href="#">ภาพรวม</a></li>
-										    <li class="breadcrumb-item active"><a href="#">เลือกรูปแบบงานและราคา</a></li>
+										    <li class="breadcrumb-item"><a href="javascript:;">ภาพรวม</a></li>
+										    <li class="breadcrumb-item active"><a href="javascript:;">เลือกรูปแบบงานและราคา</a></li>
 										</ol>
 									</nav>
 								</div>
@@ -241,7 +241,7 @@
 													<div class="row px-4 description">
 														<div class="col-md-12 d-flex">
 																<span class="title mr-auto">ประเภทงานที่เลือก</span>
-																<span class="title ">งานขนาดเล็ก</span>
+																<span class="title">งานขนาดเล็ก</span>
 														</div>
 														<div class="col-md-12 d-flex py-3 description">
 																<span class="mr-auto">ราคาต่อหน่วย</span>
@@ -269,7 +269,6 @@
 																  <input type="text" class="form-control" placeholder="รหัสคูปอง">
 																  <div class="input-group-append">
 																		<button class="btn desc-button" type="button">ใช้ส่วนลด</button>
-																    <!-- <button class="btn btn-outline-secondary" type="button">ใช้ส่วนลด</button> -->
 																  </div>
 																</div>
 															</div>
@@ -292,10 +291,10 @@
 											<div class="row">
 												<div class="col-md-12 py-2 next-btns">
 													<div class="w-100 py-1">
-														<button type="button" class="confirm-button" name="button">ขั้นตอนต่อไป</button>
+														<a class="confirm-button text-opacity-full" href="javascript:;">ขั้นตอนต่อไป</a>
 													</div>
 													<div class="w-100 py-1">
-														<button type="button" class="cancel-button" name="button">ยกเลิกรายการ</button>
+														<a class="cancel-button" href="javascript:;">ยกเลิกรายการ</a>
 													</div>
 												</div>
 											</div>
