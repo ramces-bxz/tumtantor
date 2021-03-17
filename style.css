@@ -835,10 +835,38 @@ footer .upper-footer .contact-us{
 		border: none;
 		background-color: rgb(228,115,144,0);
 		border-radius: 0px;
-
+	}
+	footer .upper-footer .footer-logo{
+			margin-right: 0px;
+    		text-align: center;
+		}
+	footer .upper-footer .help-center{
+			margin-right: 0px;
+			text-align: center;
+			margin-top: 20px;
+	}
+	footer .upper-footer .about-us{
+		margin-right: 0px;
+		margin-top: 20px;
+		text-align: center;
+	}
+	footer .upper-footer .contact-us{
+		margin-right: 0px;
+		margin-top: 20px;
+		text-align: center;
+	}
+	footer .footer-nav{
+		text-align: center;
+	}
+	footer .footer-nav .social-links{
+		justify-content: center;
+	}
+	footer .payment-gateway-figures{
+		justify-content: center !important;
 	}
 }
 	@media (max-width: 767.98px) {
+
 		#banner h1{
 			font-size: 70px;
 		}
