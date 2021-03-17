@@ -837,7 +837,14 @@ footer .upper-footer .contact-us{
 		border-radius: 0px;
 
 	}
+}
 	@media (max-width: 767.98px) {
+		#banner h1{
+			font-size: 70px;
+		}
+		#banner .banner-content {
+		    margin-top: 200px;
+		}
 		#customer-review .item{
 			margin: 0 auto;
 		}
@@ -851,8 +858,17 @@ footer .upper-footer .contact-us{
 		#search-techician .search-tech-form h3{
 			font-size: 18px
 		}
+		#progress-bar h1{
+			font-size: 24px;
+		}
 	}
 	@media (max-width: 575.98px) {
+		#banner .jobs-suggestion a{
+			margin-right: 0px;
+		}
+		#progress-bar h1{
+			font-size: 24px;
+		}
 		.progressbar li p{
 			display: none;76
 		}
@@ -861,6 +877,9 @@ footer .upper-footer .contact-us{
 		}
 		#transaction_confirm h1{
 			font-size: 28px;
+		}
+		#banner h1 {
+		    font-size: 48px;
 		}
 
 		#transaction_confirm .transaction-info .transaction-label{
@@ -899,6 +918,7 @@ footer .upper-footer .contact-us{
 		#search-helper .search-helper{
 			margin-top: 200px;
 			height: 250px;
+			overflow: hidden;
 		}
 		@keyframes myfirsts {
 		  0%   {background: transparent; right: 75px; top: 155px;}
@@ -908,5 +928,15 @@ footer .upper-footer .contact-us{
 		  80% {background: transparent; right: -10px; top: 145px;}
 		   100% {background: transparent; right: 75px; top: 155px;}
 		}
+		.task-details-holder h4{
+			font-size: 32px !important;
+		}
+		.breadcrumb-holder .breadcrumb a{
+			font-size: 14px;
+		}
+		.task-details-holder a.tdh-head-link{
+			padding-left: 0px !important;
+		}
 	}
- }
+
+
