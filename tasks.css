@@ -413,6 +413,9 @@
   .details .box-1 ul.list-group li div.total-text{
     font-size: 20px;
   }
+  .set-top-padding{
+    padding-top: 384px!important;
+  }
 }
 @media (max-width: 767.98px) {
   .describe-task-holder .map a.map-search{
@@ -444,10 +447,13 @@
     display: block;
   }
   .set-top-padding{
-    padding-top: 414px;
+    padding-top: 395px!important;
   }
 }
 @media (max-width: 991.98px) {
+  .set-top-padding{
+    padding-top: 375px;
+  }
   .fc-header-right{
     width: 26%!important;
   }
@@ -476,22 +482,4 @@
     #header .navbar-expand-lg .navbar-nav li:first-child{
       border-top: none;
     }
-
-    /* .navbar-collapse.collapsing {
-      left: -75%;
-      transition: height 0s ease;
-    }
-
-    .navbar-collapse.show {
-      left: 0;
-      transition: left 600ms ease-in-out;
-    }
-
-    .navbar-toggler.collapsed~.navbar-collapse {
-      transition: left 100ms ease-in-out;
-    } */
-
 }
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... }
