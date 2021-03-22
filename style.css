@@ -665,16 +665,16 @@ input::placeholder{
 	color: #fff;
 }
 #tumtantur-modal .modal-dialog{
-	/*margin-top: 345px;*/
 	max-width: 373px;
 	width: 100%;
 	border-radius: 8px;
 	margin:0 auto;
 }
-#tumtantur-modal .modal-dialog .modal-body{
+
+#tumtantur-modal .modal-dialog .modal-body,#tumtantur-modal-form .modal-dialog .modal-body{
 	padding:30px;
 }
-#tumtantur-modal .modal-dialog button{
+#tumtantur-modal .modal-dialog button, #tumtantur-modal-form .modal-dialog button{
 	border-radius: 12px;
 	max-width: 272px;
 	width: 100%;
@@ -683,22 +683,22 @@ input::placeholder{
 	font-size: 14px;
 	cursor: pointer;
 }
-#tumtantur-modal .modal-dialog h5{
+#tumtantur-modal .modal-dialog h5,#tumtantur-modal-form .modal-dialog h5{
 	margin-bottom: 18px;
 	margin-top: 13px;
 	color: #2B2B2B;
 	font-weight: bold;
 }
-#tumtantur-modal .modal-dialog p{
+#tumtantur-modal .modal-dialog p,#tumtantur-modal-form .modal-dialog p{
 	margin-bottom: 36px;
 	color:#4A4A4A;
 }
-#tumtantur-modal .modal-dialog button.button-record{
+#tumtantur-modal .modal-dialog button.button-record ,#tumtantur-modal-form .modal-dialog button.button-record {
 	background-color: #8A989A;
 	margin-bottom: 15px;
 	color: #fff;
 }
-#tumtantur-modal .modal-dialog button.button-cancel{
+#tumtantur-modal .modal-dialog button.button-cancel,#tumtantur-modal-form .modal-dialog button.button-cancel{
 	background-color: transparent;
 	border: 1px solid #858585;
 }

@@ -367,35 +367,21 @@
 	    	}
 	    }
 	  })
+	   $(".owl-two").owlCarousel({
+		    autoplay: true,
+		    autoplayHoverPause: true,
+		    items: 1,
+		    navigation : true,
+		    loop: true,
+		    dots:false,
+		    animateOut: 'fadeOut'
+		  });
 
 	   $('#tumtantur-modal').on('show.bs.modal', function (e) {
   			$('#header').css('z-index','1');
 		})
 	});
-
-
-
-	$(document).ready(function() { 
-		  $(".owl-two").owlCarousel({
-		    autoplay: true,
-		    autoplayTimeout: 3000,
-		    autoplayHoverPause: true,
-		    items: 1,
-		    navigation : true,
-		    loop: true,
-		    smartSpeed: 900,
-		    dots:false
-		  });
-		 
-		});
-		/* 
-		DOWNLOAD OWL CAROUSEL v2 (IT'S FREE) :
-		https://owlcarousel2.github.io/OwlCarousel2/index.html
-
-		MORE OPTIONS : 
-		https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html 
-
-		*/ 
+	
 	</script>
 	</body>
 </html>
