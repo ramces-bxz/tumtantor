@@ -167,12 +167,16 @@ a:hover{
 	border:1px solid #E47390;
 	width: 131px;
 	display: inline-block;
-	text-align: center;
+	text-indent: 10px;
 	padding-top: 10px;
 	padding-bottom: 12px;
 	font-size: 16px;
 	border-radius: 12px;
 	color: #E47390;
+	white-space: nowrap; 
+	overflow: hidden;
+  	text-overflow: ellipsis; 
+  	text-align: left;
 
 }
 #banner .jobs-suggestion{
