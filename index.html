@@ -55,43 +55,47 @@
 		 </header>
 	 		<!-- HEADER -->
 	    	<section>
-
-	    		<div id="banner" class="container">
-	    			<div class="banner-image">
-	    				<img src="images/sweeping.png">
+	    		<div id="banner" class="container-fluid">
+	    			<div class="row">
+		    			<div class="col-md-12 px-0">
+		    				<div class="owl-two owl-carousel owl-theme">
+								<div class="slider"><a class="one" href="#"></a></div>   
+								<div class="slider"><a class="two" href="#"></a></div>
+								<div class="slider"><a class="three" href="#"></a></div>
+						  	</div>
+		    			</div>
 	    			</div>
-	    			<div class="col-md-12 px-0">
-	    				<div class="banner-content">
-	    					<h5>ค้นหางานที่อยากให้...</h5>
-	    					<h1>ทำแทนเ<span>ธอ...</span></h1>
-	    					<form action="">
-	    						<input type="text" name="" placeholder="ค้นหาลักษณะงานที่ต้องการ เช่น ทำความสะอาดบ้าน, ย้ายเฟอร์นิเจอร์">
-	    						<input type="submit" name="" value="ค้นหา">
-	    					</form>
-	    					<div class="jobs-suggestion">
-	    						<a href="">
-	    							<span>ซ่อมเฟอร์นิเจอร์</span>
-	    						</a>
-	    						<a href="">
-	    							<span>ซ่อมเฟอร์นิเจอร์</span>
-	    						</a>
-	    						<a href="">
-	    							<span>ซ่อมเฟอร์นิเจอร์</span>
-	    						</a>
-	    						<a href="">
-	    							<span>ซ่อมเฟอร์นิเจอร์</span>
-	    						</a>
-	    						<a href="">
-	    							<span>ซ่อมเฟอร์นิเจอร์</span>
-	    						</a>
-	    						<a href="">
-	    							<span>ซ่อมเฟอร์นิเจอร์</span>
-	    						</a>
-	    						<a href="">ดูเพิ่มเติม...</a>
-	    					</div>
-
+	    			<div class="row">
+	    				<div class="col-md-12 banner-content">
+	    					<div class=""></div>
+		    				<h5>ค้นหางานที่อยากให้...</h5>
+		    				<h1>ทำแทนเ<span>ธอ...</span></h1>
+		    				<form action="">
+		    					<input type="text" name="" placeholder="ค้นหาลักษณะงานที่ต้องการ เช่น ทำความสะอาดบ้าน, ย้ายเฟอร์นิเจอร์">
+		    					<input type="submit" name="" value="ค้นหา">
+		    				</form>
+		    				<div class="jobs-suggestion">
+		    					<a href="">
+		    						<span>ซ่อมเฟอร์นิเจอร์</span>
+		    					</a>
+		    					<a href="">
+		    						<span>ซ่อมเฟอร์นิเจอร์</span>
+		    					</a>
+		    					<a href="">
+		    						<span>ซ่อมเฟอร์นิเจอร์</span>
+		    					</a>
+		    					<a href="">
+		    						<span>ซ่อมเฟอร์นิเจอร์</span>
+		    					</a>
+		    					<a href="">
+		    						<span>ซ่อมเฟอร์นิเจอร์</span>
+		    					</a>
+		    					<a href="">
+		    						<span>ซ่อมเฟอร์นิเจอร์</span>
+		    					</a>
+		    					<a href="">ดูเพิ่มเติม...</a>
+		    				</div>
 	    				</div>
-
 	    			</div>
 	    		</div>
 	    	</section>
@@ -363,10 +367,35 @@
 	    	}
 	    }
 	  })
+
 	   $('#tumtantur-modal').on('show.bs.modal', function (e) {
   			$('#header').css('z-index','1');
 		})
 	});
+
+
+
+	$(document).ready(function() { 
+		  $(".owl-two").owlCarousel({
+		    autoplay: true,
+		    autoplayTimeout: 3000,
+		    autoplayHoverPause: true,
+		    items: 1,
+		    navigation : true,
+		    loop: true,
+		    smartSpeed: 900,
+		    dots:false
+		  });
+		 
+		});
+		/* 
+		DOWNLOAD OWL CAROUSEL v2 (IT'S FREE) :
+		https://owlcarousel2.github.io/OwlCarousel2/index.html
+
+		MORE OPTIONS : 
+		https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html 
+
+		*/ 
 	</script>
 	</body>
 </html>
