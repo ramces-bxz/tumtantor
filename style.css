@@ -161,6 +161,15 @@ a:hover{
     font-family: SukhumvitSet-SemiBold;
     font-weight: 600;
 }
+.jobs-suggestion a{
+	margin-right: 15px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block;
+    text-decoration: underline;
+    font-family: SukhumvitSet-SemiBold;
+    font-weight: 600;
+}
 
 #banner .jobs-suggestion span{
 	background-color: rgba(228, 115, 144, 0.15);
@@ -179,7 +188,29 @@ a:hover{
   	text-align: left;
 
 }
+.jobs-suggestion span{
+	background-color: rgba(228, 115, 144, 0.15);
+	border:1px solid #E47390;
+	width: 131px;
+	display: inline-block;
+	text-indent: 10px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	font-size: 16px;
+	border-radius: 12px;
+	color: #E47390;
+	white-space: nowrap; 
+	overflow: hidden;
+  	text-overflow: ellipsis; 
+  	text-align: left;
+
+}
 #banner .jobs-suggestion{
+	max-width: 682px;
+	width:100%;
+
+}
+.jobs-suggestion{
 	max-width: 682px;
 	width:100%;
 
