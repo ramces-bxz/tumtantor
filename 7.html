@@ -132,8 +132,34 @@
 										<div class="col-md-8 box-1">
 											<div class="tumtantur-box p-4">
 												<div class="row">
-													<div class="col-md-12">
+													<div class="col-md-12 d-flex align-items-center justify-content-between">
 														<span class="box-heading">ตัวเลือกประเภทงานของคุณ</span>
+														<div id="sub-cate-link">
+															<a href="javascript:void(0);">Sub Category ➔</a>
+														</div>
+													</div>
+													<div class="col-md-12" id="sub-cat-contents" style="display: none;">
+														<div class="jobs-suggestion mt-2">
+									    					<a href="">
+									    						<span>ARK-c Service</span>
+									    					</a>
+									    					<a href="">
+									    						<span>Fixed power failure, electric shock, leakage of 1phase / 3 phases</span>
+									    					</a>
+									    					<a href="">
+									    						<span>Ark pool repair</span>
+									    					</a>
+									    					<a href="">
+									    						<span>ซ่อมเฟอร์นิเจอร์</span>
+									    					</a>
+									    					<a href="">
+									    						<span>ซ่อมเฟอร์นิเจอร์</span>
+									    					</a>
+									    					<a href="">
+									    						<span>ซ่อมเฟอร์นิเจอร์</span>
+									    					</a>
+									    					<a href="">ดูเพิ่มเติม...</a>
+									    				</div>
 													</div>
 													<div class="col-md-12">
 														<div class="py-4 w-100 task-title text-xs-center">
@@ -507,6 +533,10 @@
 	    	}
 	    }
 	  })
+	   $('#sub-cate-link').click(function(){
+	   		$('#sub-cat-contents').toggle('slow');
+	   });
+	   
 	   $('#tumtantur-modal-form').on('show.bs.modal', function (e) {
   			$('#header').css('z-index','1');
 		})
