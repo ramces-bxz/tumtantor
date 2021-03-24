@@ -83,7 +83,7 @@ a:hover{
 
 .slider a {
   background-position: center;
-  background-size: cover;  
+  background-size: cover;
   display: block;
   width: 100%;
   height: auto;
@@ -182,9 +182,9 @@ a:hover{
 	font-size: 16px;
 	border-radius: 12px;
 	color: #E47390;
-	white-space: nowrap; 
+	white-space: nowrap;
 	overflow: hidden;
-  	text-overflow: ellipsis; 
+  	text-overflow: ellipsis;
   	text-align: left;
 
 }
@@ -199,9 +199,9 @@ a:hover{
 	font-size: 16px;
 	border-radius: 12px;
 	color: #E47390;
-	white-space: nowrap; 
+	white-space: nowrap;
 	overflow: hidden;
-  	text-overflow: ellipsis; 
+  	text-overflow: ellipsis;
   	text-align: left;
 
 }
@@ -1021,4 +1021,6 @@ footer .upper-footer .contact-us{
 			padding-left: 0px !important;
 		}
 	}
-
+  .bootstrap-timepicker-widget table td a{
+    position: relative;
+  }

@@ -393,7 +393,7 @@
   text-align: center;
 }
 .time-container label{
-  font-size: 48px;
+  font-size: 16px;
   color: #2B2B2B;
   font-family: 'SukhumvitSet-Bold';
 }
@@ -451,6 +451,37 @@
   border-radius: 6px;
   /* box-shadow: 0 1px 2px #C3C3C3; */
   }
+  .time-up::after{
+    content:url('images/up.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .time-down::after{
+    content:url('images/down.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bootstrap-timepicker-widget table tr{
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     align-items: baseline;
+  }
+  .bootstrap-timepicker-widget a.btn, .bootstrap-timepicker-widget input{
+    border-radius: 1px!important;
+    border: 1px solid #ced4da;
+  }
+ .input-group-addon{
+   display: none;
+ }
 @media (max-width: 575.98px) {
   .details .box-1 .task-details ul li div.total-number{
     font-size: 38px;
@@ -532,5 +563,21 @@
     }
     #header .navbar-expand-lg .navbar-nav li:first-child{
       border-top: none;
+    }
+}
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
