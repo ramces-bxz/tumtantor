@@ -658,7 +658,12 @@ table.fc-header{
     min-width: 19px;
     padding: 6px;
     text-align: center;
-		font-family: 'SukhumvitSet-Bold';
+	font-family: 'SukhumvitSet-Bold';
+	height: 43px;
+    width: 43px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .fc-sun, .fc-sat{
     color: #b8b8b8;
