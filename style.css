@@ -629,19 +629,19 @@ input::placeholder{
 	font-size: 20px;
 	color: #2B2B2B;
 	margin: 60px auto 54px auto;
-	max-width: 600px;
+	max-width: 1000px;
 	width: 100%
 }
 #transaction_confirm .transaction-info .transaction-label{
-	max-width: 140px;
-	width: 100%;
+	/*max-width: 140px;
+	width: 100%;*/
 	text-align: right;
 	margin-bottom: 20px;
-	margin-right: 14px;
+	padding-right: 14px;
 }
-#transaction_confirm .transaction-info div{
+/*#transaction_confirm .transaction-info div{
 	margin-bottom: 20px;
-}
+}*/
 #transaction_confirm h1 {
 	margin-bottom: 22px;
 	font-size: 36px;
@@ -695,8 +695,7 @@ input::placeholder{
 	text-align: center;
 	line-height: 45px;
 	text-decoration: none;
-	margin-top: 34px;
-	margin: 0 auto;
+	margin: 34px auto 0 auto;
 }
 #transaction_successful a:hover{
 	color: #fff;
@@ -1343,6 +1342,16 @@ footer .upper-footer .contact-us{
    display: none;
  }
 @media (max-width: 991.98px) {
+	#transaction_confirm .transaction-info .transaction-label{
+			max-width: 100%;
+			text-align: center;
+			margin-bottom: 0px;
+			margin-top: 20px;
+			margin-right: 0px;
+	}
+	#transaction_confirm .transaction-info .transaction-value{
+			text-align: center;
+		}
 	.set-top-padding{
 	    padding-top: 375px;
 	  }
@@ -1489,6 +1498,7 @@ footer .upper-footer .contact-us{
 			display: block;
 			margin-left: 0px;
 			margin-bottom: 15px;
+			border: 1px solid #fff;
 		}
 		#banner .banner-content input[type="text"]{
 			margin-bottom: 15px;
@@ -1540,6 +1550,7 @@ footer .upper-footer .contact-us{
 		.set-top-padding{
 		  	padding-top: 395px!important;
 		}
+
 	}
 	@media (max-width: 575.98px) {
 		#banner .jobs-suggestion a{
@@ -1561,13 +1572,7 @@ footer .upper-footer .contact-us{
 		    font-size: 48px;
 		}
 
-		#transaction_confirm .transaction-info .transaction-label{
-			max-width: 100%;
-			text-align: center;
-			margin-bottom: 0px;
-			margin-top: 20px;
-			margin-right: 0px;
-		}
+		
 		#search-helper .search-helper{
 			width: 250px;
 		}
