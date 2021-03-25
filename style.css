@@ -956,6 +956,10 @@ footer .upper-footer .contact-us{
   color: #2B2B2B;
   font-family: 'SukhumvitSet-SemiBold';
 }
+.details  .box-2 .description .location{
+  font-size: 14px;
+  font-family: 'SukhumvitSet-Medium';
+}
 .details .box-2 .bg-wrning{
   background-color:#F7D5DD;
   color:#E47390;
@@ -1233,6 +1237,50 @@ footer .upper-footer .contact-us{
   margin-top: 0;
   padding-top: 1em;
   }
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  background-color: #D3D3D3;
+  border-radius: 3px;
+}
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #DCDBDB;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #D3D3D3;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
 .external-event { /* try to mimick the look of a real event */
   margin: 10px 0;
@@ -1583,6 +1631,15 @@ footer .upper-footer .contact-us{
 		.fc-state-default.fc-corner-left{
 		   right: 9px!important;
 		}
+    .fc-week .fc-day > div .fc-day-number{
+      font-size: 12px!important;
+      height:20px!important;
+      width: 20px!important;
+      padding: 2px!important;
+    }
+    .fc-border-separate tr.fc-last th{
+      font-size: 10px!important;
+    }
 	}
   .bootstrap-timepicker-widget table td a{
     position: relative;
@@ -1594,4 +1651,3 @@ footer .upper-footer .contact-us{
   	margin: 0 auto;
   	width: 50%;
   }
-
