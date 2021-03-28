@@ -338,38 +338,75 @@
 			  <div class="modal-dialog modal-dialog-centered" >
 			    <div class="modal-content text-center">
 			      <div class="modal-body">
-			      	<h5 class="modal-title">บันทึกรายการไว้ภายหลัง?</h5>
-			        <p>คุณต้องการบันทึกรายการไว้ <br>ดำเนินการต่อภายหลังหรือไม่?</p>
-			        <form>
-			          <div class="form-group">
-			            <input type="text" class="form-control" placeholder="First name">
-			          </div>
-			          <div class="form-group">
-			            <input type="text" class="form-control" placeholder="Last name" >
-			          </div>
-			          <div class="form-group">
-			            <input type="email" class="form-control" placeholder="Email" >
-			          </div>
-			          <div class="form-group">
-			            <input type="tel" class="form-control" placeholder="Number" >
-			          </div>
-			          <div class="form-group">
-			            <input type="text" class="form-control" placeholder="Line" >
-			          </div>
-			          <div class="form-group text-left d-flex">
-			            <div>
-			            	<input type="radio" id="male" name="gender" value="male">
-							<label for="male">Male</label><br>
-			            </div>
-						<div class="ml-3">
-							<input type="radio" id="female" name="gender" value="female">
-							<label for="female">Female</label><br>
+				        <div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="nav nav-tabs border-0 mb-4">
+									    <li class="active text-center" id="register-link">
+									    	<h4>Welcome! Please Login to continue.</h4>
+									    	New member?<a  data-toggle="tab" href="#register"> Register </a>here.
+									    </li>
+									    <li id="login-link" class="text-center" style="display: none;">
+									    	<h4>Create your Tumtantur Account</h4>
+									    	Already member?<a  data-toggle="tab" href="#login"> Login </a> here
+									    </li>
+									</ul>
+
+								  <div class="tab-content">
+								    <div id="login" class="tab-pane active">
+								    	<form>
+								    		<div class="form-group">
+									           	<input type="text" class="form-control" placeholder="Email">
+									        </div>
+									        <div class="form-group">
+									            <input type="text" class="form-control" placeholder="Password" >
+									        </div>
+									        <button class="tumtantor-btn-style tumtantor-btn-active mt-3">Login</button>
+									        <small class="d-block">Or, login with</small>
+									        <button class="tumtantor-btn-style btn-primary mt-2">Facebook</button>
+									        <button class="tumtantor-btn-style btn-danger mt-2">Google</button>
+									        
+								    	</form>
+								    </div>
+
+								    <div id="register" class="tab-pane fade">
+								    	<!-- <h5 class="modal-title">บันทึกรายการไว้ภายหลัง?</h5>
+					        			<p>คุณต้องการบันทึกรายการไว้ <br>ดำเนินการต่อภายหลังหรือไม่?</p> -->
+								      	<form>
+									          <div class="form-group">
+									            <input type="text" class="form-control" placeholder="First name">
+									          </div>
+									          <div class="form-group">
+									            <input type="text" class="form-control" placeholder="Last name" >
+									          </div>
+									          <div class="form-group">
+									            <input type="email" class="form-control" placeholder="Email" >
+									          </div>
+									          <div class="form-group">
+									            <input type="tel" class="form-control" placeholder="Number" >
+									          </div>
+									          <div class="form-group">
+									            <input type="text" class="form-control" placeholder="Line" >
+									          </div>
+									          <div class="form-group text-left d-flex">
+									            <div>
+									            	<input type="radio" id="male" name="gender" value="male">
+													<label for="male">Male</label><br>
+									            </div>
+												<div class="ml-3">
+													<input type="radio" id="female" name="gender" value="female">
+													<label for="female">Female</label><br>
+												</div>
+									          </div>
+									        </form>
+									        <button class="tumtantor-btn-active mb-2">บันทึก</button>
+									        <button class="button-cancel" data-dismiss="modal">ยกเลิก</button>
+								    	</div>
+								 	 </div>
+								</div>
+							</div>
 						</div>
-			          </div>
-			        </form>
-			        <button class="tumtantor-btn-active mb-2">บันทึก</button>
-			        <button class="button-cancel" data-dismiss="modal">ยกเลิก</button>
-			      </div>
+			      	</div>
 			    </div>
 			  </div>
 			</div>
@@ -510,6 +547,7 @@
 	<script src="js/popper.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/owl-carousel.js"></script>
+
 	<script type="text/javascript">
   	$(document).ready(function(){
 	   $('.owl-one').owlCarousel({
@@ -534,6 +572,7 @@
 	    	}
 	    }
 	  })
+
 	   $('#sub-cate-link').click(function(){
 	   		$('#sub-cat-contents').toggle('slow');
 	   });
@@ -541,6 +580,17 @@
 	   $('#tumtantur-modal-form').on('show.bs.modal', function (e) {
   			$('#header').css('z-index','1');
 		})
+
+	   $('#register-link').on('shown.bs.tab', function(event){
+	   		$(this).hide()
+	   		$('#login-link').show();
+		});
+
+	   $('#login-link').on('shown.bs.tab', function(event){
+	   		$(this).hide()
+	   		$('#register-link').show();
+		});
+
 	});
 	</script>
 	</body>

@@ -700,6 +700,9 @@ input::placeholder{
 #transaction_successful a:hover{
 	color: #fff;
 }
+.nav-tabs li{
+	width: 100%;
+}
 #tumtantur-modal .modal-dialog{
 	max-width: 373px;
 	width: 100%;
