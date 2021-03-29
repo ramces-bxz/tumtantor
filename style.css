@@ -107,7 +107,12 @@ a:hover{
 	font-family: SukhumvitSet-Bold;
 	font-weight: bold;
 }
-
+.btn-coupon{
+	border: 1px solid #E47390;
+	background-color: transparent;
+	color: #E47390;
+	background-color: #FBEAEE;
+}
 #banner .owl-carousel .owl-nav button.owl-prev{
 	position: absolute;
     top: 50%;
@@ -702,6 +707,12 @@ input::placeholder{
 }
 .nav-tabs li{
 	width: 100%;
+}
+.fb-button::before{
+	content: url('images/facebook.png');
+}
+.fb-button{
+	max-width: auto !important;
 }
 #tumtantur-modal .modal-dialog{
 	max-width: 373px;
@@ -1343,6 +1354,9 @@ footer .upper-footer .contact-us{
   }
  .input-group-addon{
    display: none;
+ }
+ #payment input,#payment button{
+ 	border-radius: 0px;
  }
 @media (max-width: 991.98px) {
 	#transaction_confirm .transaction-info .transaction-label{
