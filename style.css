@@ -1358,6 +1358,11 @@ footer .upper-footer .contact-us{
  #payment input,#payment button{
  	border-radius: 0px;
  }
+ #task-list{
+	height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+	}
 @media (max-width: 991.98px) {
 	#transaction_confirm .transaction-info .transaction-label{
 			max-width: 100%;
@@ -1467,6 +1472,7 @@ footer .upper-footer .contact-us{
 	#banner h1 span{
 		color: #fff;
 	}
+	
 	footer .payment-gateway-figures{
 		justify-content: start !important;
 	}
